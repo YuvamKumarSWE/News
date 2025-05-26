@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-800 to-gray-900">
+      <div className="background bg-paper">
         <Routes>
           <Route path="/" element={<LandingPage/>}/>
           <Route path="/login" element={<Login/>}/>
