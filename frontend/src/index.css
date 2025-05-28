@@ -68,6 +68,10 @@
   .floating-orb-2 {
     @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-ping;
   }
+
+  .input-box{
+    @apply border;
+  }
 }
 
 .bg-paper {
