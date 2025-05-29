@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Globe, Brain, TrendingUp, Shield,  Eye, ArrowRight } from 'lucide-react';
+import { Eye, LogOut } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
+
+  const [username, setUsername] = useState("Yuvam");
 
   const navigate = useNavigate();
 
@@ -24,16 +26,23 @@ function Dashboard() {
             TruthWatch
           </span>
         </div>
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
-          <button onClick={()=>navigate('/login')} className="nav-button">
-            Get Started
-          </button>
+        <div className="hidden md:flex items-center space-x-8 opacity-90  p-1 pl-4 pr-4 rounded-2xl bg-gradient-to-br from-cyan-400 to-purple-500">
+          <div onClick={()=> console.log("Hi")} class="w-8 h-8 border-4 text-[#563cd591] rounded-full flex items-center justify-center text-sm font-bold cursor-pointer">
+            {username[0]}
+          </div>
+          <div onClick={()=>navigate("/")}>
+            <LogOut className='cursor-pointer'/>
+          </div>
         </div>
       </nav>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-15 transition-all ">
-        
+        <div>
+
+        </div>
+        <div>
+          
+        </div>
       </div>
 
      
